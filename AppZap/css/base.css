@@ -2,7 +2,7 @@
  * @Author: Derek.S 
  * @Date: 2019-02-12 23:59:03 
  * @Last Modified by: Derek.S
- * @Last Modified time: 2019-02-13 02:43:28
+ * @Last Modified time: 2019-02-13 03:27:14
  */
 html, body, div, p, a, i, em, img, ul, li {
     margin: 0;
@@ -126,11 +126,38 @@ button.get-start {
     font-size: 18px;
     width: 180px;
     height: 50px;
-    display: inline-block;
     float: right;
     background: none;
     border: 3px solid #fff;
     border-radius: 10px;
     color: #fff;
     margin-top: 24px;
+}
+div.rec-strip {
+    width: 554px;
+    height: 118px;
+    background:  rgba(255, 255, 255, 0.04);
+    transform: rotate(156deg);
+}
+.rec-strip+.rec-strip {
+    transform: rotate(156deg) translate(356px, 50px)
+}
+div.rec-group {
+    position: absolute;
+}
+div.rec-group:first-child {
+    top: 30%;
+    left: 0%;
+}
+div.rec-group:nth-child(2) {
+    top: 20%;
+    left: 35%;
+}
+div.rec-group:nth-child(3) {
+    top: 20%;
+    left: 70%;
+}
+div.rec-group:last-child {
+    top: 85%;
+    left: 35%;
 }

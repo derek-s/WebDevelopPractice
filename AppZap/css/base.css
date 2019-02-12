@@ -1,0 +1,136 @@
+/*
+ * @Author: Derek.S 
+ * @Date: 2019-02-12 23:59:03 
+ * @Last Modified by: Derek.S
+ * @Last Modified time: 2019-02-13 02:43:28
+ */
+html, body, div, p, a, i, em, img, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei"
+}
+i,em {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.clearfix::after, .clearfix::before {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+header {
+    position: relative;
+}
+.header_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 820px;
+    width: 1920px;
+    border-radius: 0% 0% 15% 15%;
+    background: rgb(4, 22, 153);
+    background: -moz-linear-gradient(309deg, rgb(4, 22, 153) 30%, rgb(11, 65, 217) 70%);
+    background: -webkit-linear-gradient(309deg, rgb(4, 22, 153) 30%, rgb(11, 65, 217) 70%);
+    background: -o-linear-gradient(309deg, rgb(4, 22, 153) 30%, rgb(11, 65, 217) 70%);
+    background: -ms-linear-gradient(309deg, rgb(4, 22, 153) 30%, rgb(11, 65, 217) 70%);
+    background: linear-gradient(39deg, rgb(4, 22, 153) 30%, rgb(11, 65, 217) 70%);
+    z-index: -1;
+}
+.header_bg::before {
+    content: "";
+    display: block;
+    height: 98px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.navbar {
+    width: 1176px;
+    height: 98px;
+    color: #fff;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    margin-top: 30px;
+}
+.logo i{
+    position: absolute;
+    color: #1e3fc5;
+    font-size: 20px;
+    top: 25%;
+    left: 25%;
+}
+.logo-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+    background: #fff;
+    margin-right: 22px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.logo-icon-small {
+    width: 25px;
+    height: 25px;
+    background: #e6e7f5;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.logo a{
+    color: #fff; 
+    line-height: 42px;
+    font-size: 20px;
+}
+.nav-menu {
+    float:left;
+    margin-left: 240px;
+}
+.nav-menu a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #a6b7ee;
+    font-size: 18px;
+}
+.nav-menu a:hover {
+    color: #fff;
+}
+.nav-menu li{
+    height: 98px;
+    float: left;
+    margin-right: 60px;
+    line-height: 98px;
+    box-sizing: border-box;
+}
+.nav-menu li:hover, .nav-menu li:first-child {
+    border-bottom: 4px solid #fff;
+}
+.nav-menu li:first-child a {
+    color: #fff;
+}
+button.get-start {
+    font-size: 18px;
+    width: 180px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 24px;
+}

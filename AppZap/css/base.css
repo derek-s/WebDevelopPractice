@@ -2,12 +2,16 @@
  * @Author: Derek.S 
  * @Date: 2019-02-12 23:59:03 
  * @Last Modified by: Derek.S
- * @Last Modified time: 2019-02-13 03:54:06
+ * @Last Modified time: 2019-02-13 04:05:17
  */
 html, body, div, p, a, i, em, img, ul, li {
     margin: 0;
     padding: 0;
     font-family: "Microsoft Yahei"
+}
+body {
+    background: #f6fafd;
+    overflow: hidden;
 }
 i,em {
     font-style: normal;
@@ -30,14 +34,14 @@ li {
 }
 header {
     position: relative;
-    
+    height: 816px;
 }
 .header_bg {
     position: absolute;
     top: 0;
     left: 0;
     display: block;
-    height: 820px;
+    height: 100%;
     width: 100%;
     border-radius: 0% 0% 15% 15%;
     background: rgb(4, 22, 153);
@@ -55,9 +59,14 @@ header {
     height: 98px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.navbar, .intro {
+.navbar {
     width: 1176px;
+    color: #fff;
+    margin: 0 auto;
     height: 98px;
+}
+.intro {
+    width: 1176px;
     color: #fff;
     margin: 0 auto;
 }
@@ -166,7 +175,7 @@ div.rec-group:last-child {
 .intro {
     margin-top: 180px;
     width: 1176px;
-
+    margin-bottom: 170px;
 }
 h3.intro-title {
     font-weight: normal;
@@ -196,4 +205,138 @@ a.free-trial-button {
     background: -ms-linear-gradient(0deg, rgb(246, 93, 23) 30%, rgb(255, 150, 35) 70%);
     background: linear-gradient(90deg, rgb(246, 93, 23) 30%, rgb(255, 150, 35) 70%);
     border-radius: 10px;
+}
+.deivces {
+    width: 100%;
+    position: absolute;
+    top: 418px;
+    left: 1200px;
+    transform-origin: left top;
+    transform: rotate(-30deg);
+    z-index: 2;
+}
+.iphone, .ipad {
+    width: 265px;
+    height: 531px;
+    background: #fff;
+    border-radius: 30px;
+    float: left;
+}
+.iphone {
+    margin-top: 100px;
+}
+.ipad {
+    width: 536px;
+    height: 790px;
+    margin-left: 60px;
+}
+.iphone-head, .ipad-head {
+    height: 42px;
+    position: relative;
+}
+.iphone-head::before {
+    content: "";
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 88px;
+}
+.iphone-head::after {
+    content: "";
+    height: 8px;
+    width: 45px;
+    border-radius: 5px;
+    display: block;
+    background: #000;
+    position: absolute;
+    top: 38px;
+    left: 115px;
+
+}
+.iphone-body {
+    height: 432px;
+}
+.iphone-foot, .ipad-foot {
+    height: 42px;
+    position: relative;
+}
+.iphone-foot::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.iphone-foot::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.ipad-head::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #000;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 248px;
+}
+.ipad-head::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 260px;
+}
+.ipad-body {
+    height: 660px;
+    margin: 0 18px;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+.ipad-foot::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.ipad-foot::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }

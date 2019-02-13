@@ -60,7 +60,7 @@ header {
     background: -o-linear-gradient(309deg, rgb(4, 22, 153) 30%, rgb(11, 65, 217) 70%);
     background: -ms-linear-gradient(309deg, rgb(4, 22, 153) 30%, rgb(11, 65, 217) 70%);
     background: linear-gradient(39deg, rgb(4, 22, 153) 30%, rgb(11, 65, 217) 70%);
-    z-index: -1;
+    z-index: -100;
     overflow: hidden;
 }
 .header_bg::before {
@@ -133,11 +133,9 @@ header {
     line-height: 98px;
     box-sizing: border-box;
 }
-.nav-menu li:hover, .nav-menu li:first-child {
-    border-bottom: 4px solid #fff;
-}
-.nav-menu li:first-child a {
+div.nav-menu li:hover {
     color: #fff;
+    border-bottom: 4px solid #fff;
 }
 button.get-start {
     font-size: 18px;
@@ -219,6 +217,7 @@ a.free-trial-button {
     overflow: hidden;
     position: absolute;
     top: -15%;
+    z-index: -10;
 }
 .devices {
     width: 100%;
@@ -532,6 +531,7 @@ span.step-info {
     position: absolute;
     top: 10%;
     right: 0;
+    z-index: -50;
 }
 .playbox-fa {
     position: absolute;

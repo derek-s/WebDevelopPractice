@@ -21,6 +21,12 @@ a {
 li {
     list-style: none;
 }
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
 .clearfix::after, .clearfix::before {
     content: "";
     display: table;
@@ -209,10 +215,10 @@ a.free-trial-button {
 .devices-box {
     width: 100%;
     min-width: 1176px;
-    height: 1000px;
+    height: 1050px;
     overflow: hidden;
     position: absolute;
-    top: -10%;
+    top: -15%;
 }
 .devices {
     width: 100%;
@@ -413,7 +419,16 @@ section {
     left: -150px;
     z-index: -9999;
 }
-.fast-setup-step-first {
+.section-two {
+    background: #e4f4f8;
+    position: absolute;
+    top: 30%;
+    transform: scale(0.4) rotate(-30deg);
+    transform-origin: right bottom;
+    right: 0;
+    z-index: -9999;
+}
+.fast-setup-step-first, .fast-setup-step-second{
     width: 494px;
     float: right;
     position: relative;
@@ -483,4 +498,45 @@ span.step-info {
     left: 10%;
     transform: scale(0.6) skewY(15deg) rotate(-35deg);
     z-index: -2;
+}
+.fast-setup-step-second {
+    margin-top: 254px;
+    float: left;
+}
+.playbox {
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+    display: block;
+    background: #fff;
+    float: right;
+    margin-top: 250px;
+    position: relative;
+}
+.playbox::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #f4f4f4;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bg-block-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+.playbox-fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }

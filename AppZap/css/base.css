@@ -11,7 +11,6 @@ html, body, div, p, a, i, em, img, ul, li {
 }
 body {
     background: #f6fafd;
-    overflow: hidden;
 }
 i,em {
     font-style: normal;
@@ -32,17 +31,22 @@ li {
 .clearfix {
     *zoom: 1;
 }
+.pagewide {
+    width: 1176px;
+    margin: 0 auto;
+}
 header {
     position: relative;
     height: 816px;
 }
 .header_bg {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     height: 100%;
     width: 100%;
+    min-width: 1176px;
+    position: absolute;
+    top: 0;
+    left: 0;
     border-radius: 0% 0% 15% 15%;
     background: rgb(4, 22, 153);
     background: -moz-linear-gradient(309deg, rgb(4, 22, 153) 30%, rgb(11, 65, 217) 70%);
@@ -60,15 +64,11 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .navbar {
-    width: 1176px;
     color: #fff;
-    margin: 0 auto;
     height: 98px;
 }
 .intro {
-    width: 1176px;
     color: #fff;
-    margin: 0 auto;
 }
 .logo {
     float: left;
@@ -206,11 +206,19 @@ a.free-trial-button {
     background: linear-gradient(90deg, rgb(246, 93, 23) 30%, rgb(255, 150, 35) 70%);
     border-radius: 10px;
 }
-.deivces {
+.devices-box {
+    width: 100%;
+    min-width: 1176px;
+    height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    top: -10%;
+}
+.devices {
     width: 100%;
     position: absolute;
-    top: 418px;
-    left: 1200px;
+    top: 50%;
+    left: 60%;
     transform-origin: left top;
     transform: rotate(-30deg);
     z-index: 2;
@@ -223,7 +231,7 @@ a.free-trial-button {
     float: left;
 }
 .iphone {
-    margin-top: 100px;
+    margin-top: 54px;
 }
 .ipad {
     width: 536px;
@@ -339,4 +347,115 @@ a.free-trial-button {
     top: 30px;
     left: 50%;
     transform: translate(-50%, 0);
+}
+section {
+    position: relative;
+}
+.partner-bar {
+    margin-top: 105px;
+    width: 100%;
+    position: relative;
+}
+.partner-bar img {
+    width: 140px;
+    height: 88px;
+}
+.partner-bar li {
+    float: left;
+    min-width: 240px;
+    width: 20%;
+    text-align: center;
+}
+.partner-bar li:last-child {
+    margin: 0;
+}
+.partner-bar span {
+    display: inline-block;
+}
+.partner-bar span:nth-child(even), .partner-bar span:nth-child(odd) {
+    font-size: 13px;
+    color: #222328;
+    line-height: 28px;
+}
+.partner-bar span:nth-child(even) {
+    margin-top: 32px;
+    margin-bottom: 30px;
+}
+.partner-shade {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); 
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255, 1) 0%, rgba(255,255,255, 0) 15%, rgba(255,255,255, 0) 85%, rgba(255,255,255, 1) 100%);
+    background: -moz-linear-gradient(0deg,  rgba(255,255,255, 1) 0%, rgba(255,255,255, 0) 15%, rgba(255,255,255, 0) 85%, rgba(255,255,255, 1) 100%);
+    background: -o-linear-gradient(0deg,  rgba(255,255,255, 1) 0%, rgba(255,255,255, 0) 15%, rgba(255,255,255, 0) 85%, rgba(255,255,255, 1) 100%);
+    background: -ms-linear-gradient(0deg,  rgba(255,255,255, 1) 0%, rgba(255,255,255, 0) 15%, rgba(255,255,255, 0) 85%, rgba(255,255,255, 1) 100%);
+    background: linear-gradient(90deg,  rgba(255,255,255, 1) 0%, rgba(255,255,255, 0) 15%, rgba(255,255,255, 0) 85%, rgba(255,255,255, 1) 100%);
+}
+
+.fast-setup-step {
+    margin-top: 164px;
+    display: block;
+}
+.bg-block {
+    width: 1000px;
+    height: 1000px;
+    background: #000;
+    border-radius: 30%;
+}
+.section-one {
+    background: #eff3fa;
+    position: absolute;
+    top: 15%;
+    transform: scale(0.97) rotate(-30deg);
+    transform-origin: right bottom;
+    left: -150px;
+    z-index: -1;
+}
+.fast-setup-step-first {
+    width: 494px;
+    float: right;
+    position: relative;
+}
+.number {
+    font-size: 180px;
+    color: rgba(34,35,40, 0.1);
+    font-weight: 700;
+
+}
+.step-num::after {
+    content: "FAST SETUP";
+    font-size: 16px;
+    color: #0d4cf2;
+    position: absolute;
+    left: 10px;
+    top: 94px;
+}
+h3.step-title {
+    font-size: 34px;
+    color: #222328;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    line-height: 54px;
+}
+span.step-info {
+    display: block;
+    margin-top: 38px;
+    margin-left: 10px;
+    line-height: 32px;
+    font-size: 18px;
+    color: #3a3d4b;
+}
+.whitebox {
+    width: 1000px;
+    height: 1000px;
+    background: #fff
+}
+.three-box {
+    position: absolute;
+}
+.w-b-i-one {
+    transform: scale(0.97)
 }

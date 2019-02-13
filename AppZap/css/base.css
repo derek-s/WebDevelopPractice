@@ -411,7 +411,7 @@ section {
     transform: scale(0.97) rotate(-30deg);
     transform-origin: right bottom;
     left: -150px;
-    z-index: -1;
+    z-index: -9999;
 }
 .fast-setup-step-first {
     width: 494px;
@@ -449,13 +449,38 @@ span.step-info {
     color: #3a3d4b;
 }
 .whitebox {
-    width: 1000px;
-    height: 1000px;
     background: #fff
 }
 .three-box {
-    position: absolute;
+    position: relative;
+    float:left;
+    width: 450px;
+    display: block;
+}
+.w-b-i-one, .w-b-i-two, .w-b-i-three {
+    height: 250px;
+    width: 440px;
+    border-right: 2px solid #f7f7f7;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, .3);
+    
 }
 .w-b-i-one {
-    transform: scale(0.97)
+    margin-top: 50px;
+    transform: skewY(15deg) rotate(-35deg);
+    z-index: 5;
+}
+.w-b-i-two {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: scale(0.7) skewY(15deg) rotate(-35deg);
+    z-index: -1;
+}
+.w-b-i-three {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: scale(0.6) skewY(15deg) rotate(-35deg);
+    z-index: -2;
 }

@@ -430,7 +430,7 @@ section {
     right: 0;
     z-index: -9999;
 }
-.fast-setup-step-first, .fast-setup-step-second{
+.fast-setup-step-first, .fast-setup-step-second, .fast-setup-step-third{
     width: 494px;
     float: right;
     position: relative;
@@ -474,13 +474,18 @@ span.step-info {
     width: 450px;
     display: block;
 }
-.w-b-i-one, .w-b-i-two, .w-b-i-three {
+.w-b-i-one, .w-b-i-two, .w-b-i-three, .w-b-one, .w-b-two, .w-b-three {
     height: 250px;
     width: 440px;
     border-right: 2px solid #f7f7f7;
     border-bottom: 2px solid #ccc;
     box-shadow: 0 0 50px 5px rgba(0, 0, 0, .3);
+    border-radius: 10px;
     
+}
+.w-b-one, .w-b-two, .w-b-three {
+    box-shadow: 0 0 50px 2px rgba(0, 0, 0, .1);
+    border: none;
 }
 .w-b-i-one {
     margin-top: 50px;
@@ -501,9 +506,31 @@ span.step-info {
     transform: scale(0.6) skewY(15deg) rotate(-35deg);
     z-index: -2;
 }
+.w-b-one {
+    margin-top: 50px;
+    z-index: 5;
+}
+.w-b-two {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: scale(0.7);
+    z-index: -1;
+}
+.w-b-three {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    transform: scale(0.6);
+    z-index: -2;
+}
 .fast-setup-step-second {
     margin-top: 254px;
     float: left;
+}
+.fast-setup-step-third {
+    margin-top: 254px;
+    float: right;
 }
 .playbox {
     width: 550px;
@@ -542,4 +569,7 @@ span.step-info {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+}
+.tb-last {
+    margin-top: 254px;
 }

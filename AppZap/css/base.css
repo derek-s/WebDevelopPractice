@@ -436,6 +436,15 @@ section {
     right: 0;
     z-index: -9999;
 }
+.section-three {
+    background: #e6f7fc;
+    position: absolute;
+    top: 400%;
+    transform: scale(0.4) rotate(-30deg);
+    transform-origin: right bottom;
+    right: 50px;
+    z-index: -9999;
+}
 .fast-setup-step-first, .fast-setup-step-second, .fast-setup-step-third{
     width: 494px;
     float: right;

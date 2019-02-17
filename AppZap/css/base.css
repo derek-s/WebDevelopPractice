@@ -792,6 +792,7 @@ a.plan-button:hover {
     margin-bottom: 160px;
 }
 .prev, .next {
+    color: #000;
     display: block;
     font-size: 18px;
     width: 64px;
@@ -804,4 +805,48 @@ a.plan-button:hover {
 }
 .prev {
     margin-right: 10px;
+}
+footer {
+    background: #0b0818;
+    border-radius: 1000px 0px 0px 0px;
+}
+.footer-one-box {
+    margin-right: 34px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #302e3b;
+}
+.bottom-top-box {
+    display: block;
+    width: 860px;
+    margin: 115px auto 36px auto;
+    text-align: center;
+}
+.bottom-msg-top {
+    color: #e0e0e1;
+}
+.bottom-top-box ul {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+.bottom-top-box li {
+    vertical-align: middle;
+    display: inline-block;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background: #3e4251;
+    margin-right: 25px;
+}
+.bottom-top-box li:nth-child(3) {
+    width: 97px;
+    height: 97px;
+    background: #98a9b9;
+}
+.bottom-top-box li:last-child {
+    margin-right: 0;
+}
+.bottom-msg-bottom {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
 }

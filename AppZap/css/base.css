@@ -717,11 +717,11 @@ a.plan-button {
     border: 2px solid #ccc;
     padding: 15px 65px;
     border-radius: 10px;
-    box-sizing: border-box;
 }
 a.plan-button:hover {
     color: #fff;
     border: none;
+    padding: 17px 67px;
     background: rgb(246, 93, 23);
     background: -webkit-linear-gradient(0deg, rgb(246, 93, 23) 30%, rgb(255, 150, 35) 70%);
     background: -moz-linear-gradient(0deg, rgb(246, 93, 23) 30%, rgb(255, 150, 35) 70%);
@@ -731,4 +731,77 @@ a.plan-button:hover {
 }
 .pricing-plans-box {
     margin-bottom: 235px;
+}
+.blog-post-list ul {
+    display: block;
+    width: 2000px;
+    position: absolute;
+}
+.blog-post-list li {
+    width: 390px;
+    height: 475px;
+    display: block;
+    float: left;
+    margin: 10px 25px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 25px 40px 50px 1px rgba(0, 0, 0, .1);
+}
+
+.blog-post-list {
+    width: 100%;
+    min-width: 1538px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 45px;
+}
+.latest-blog-posts {
+    position: relative;
+}
+.blog-thumbnail {
+    height: 260px;
+}
+.blog-info {
+    padding: 30px;
+    height: 216px;
+    background: #f8f8f8;
+}
+.post-date {
+    display: block;
+    font-size: 16px;
+    color: #a7a7a7;
+    margin-bottom: 25px;
+}
+.post-title {
+    color: #222328;
+    font-size: 18px;
+    line-height: 33px;
+    
+}
+.post-readmore {
+    margin-top: 25px;
+    display: block;
+    text-decoration: underline;
+}
+.pravbutton {
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 160px;
+}
+.prev, .next {
+    display: block;
+    font-size: 18px;
+    width: 64px;
+    float: left;
+    height: 64px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 64px;
+}
+.prev {
+    margin-right: 10px;
 }

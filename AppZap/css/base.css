@@ -958,3 +958,9 @@ span.footer-title {
     box-sizing: content-box;
     margin-top: -1px;
 }
+.copyright {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 85px;
+}

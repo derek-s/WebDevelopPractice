@@ -964,3 +964,11 @@ span.footer-title {
     color: #fff;
     margin-bottom: 85px;
 }
+a.a-select {
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    box-sizing: border-box;
+}
+a.a-select:hover {
+    border: none;
+}

@@ -896,3 +896,65 @@ footer {
     font-size: 16px;
     text-align: center;
 }
+.footer-one-two {
+    margin-top: 88px;
+}
+.footerbar-box-one {
+    width: 15%;
+    margin-bottom: 76px;
+    float: left;
+    margin-right: 70px;
+}
+.footerbar-box-one:last-child {
+    width: 35%;
+    margin-right: 0;
+}
+span.footer-title {
+    color: #fff;
+    margin-bottom: 28px;
+    display: block;
+}
+.footerbar-box-one li {
+    margin-bottom: 20px;
+    
+}
+.footerbar-box-one li span {
+    color: #fff;
+}
+.connect li {
+    float: left;
+    color: #fff;
+    font-size: 28px;
+    margin-right: 22px;
+}
+.subscibe {
+    position: relative;
+}
+.subscibe i {
+    color: #909193;
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#subscibe-email {
+    padding: 25px 0px 25px 60px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background: #fff;
+    float:left;
+}
+#subscibe-button {
+    float: left;
+    padding: 25px 30px;
+    color: #fff;
+    background: #0d4cf2;
+    border: 1px solid #0d4cf2;
+    border-radius: 0px 10px 10px 0px;
+    height: 13px;
+    display: block;
+    vertical-align: top;
+    box-sizing: content-box;
+    margin-top: -1px;
+}

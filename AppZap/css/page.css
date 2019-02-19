@@ -271,53 +271,6 @@ p.mp-about-info {
     font-size: 18px;
     line-height: 33px;
 }
-
-.section-six {
-    background: #eff1f8;
-    position: absolute;
-    top: 25%;
-    transform: scale(0.9) rotate(-30deg);
-    transform-origin: left bottom;
-    left: 0;
-    z-index: -3;
-}
-
-.section-seven {
-    background: #eaeff9;
-    position: absolute;
-    top: -10%;
-    transform: scale(0.4) rotate(-30deg);
-    transform-origin: left bottom;
-    left: 30%;
-    z-index: -3;
-}
-.section-eight {
-    background: #e6f7fc;
-    position: absolute;
-    top: 20%;
-    transform: scale(0.9) rotate(-30deg);
-    transform-origin: left bottom;
-    right: -30%;
-    z-index: -3;
-}
-.section-nine {
-    background: #eaf6fc;
-    position: absolute;
-    top: -15%;
-    transform: scale(0.9) rotate(30deg);
-    transform-origin: left bottom;
-    right: 0;
-    z-index: -3;
-}
-.section-ten {
-    background: #eaeff9;
-    position: absolute;
-    top: 5%;
-    transform: scale(0.3) rotate(-30deg);
-    transform-origin: left bottom;
-    left: 0;
-    z-index: -3;
-}
 .faqs li {
     float: none;
     width: 1133px;

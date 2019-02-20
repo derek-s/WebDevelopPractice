@@ -3,6 +3,9 @@ body, header, section, footer, i, a, ul, li, div, span, h1, h2, h3, h4, h5, h6, 
     padding: 0;
     font-family: 'Microsoft Yahei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+ul {
+    list-style-type: none;
+}
 .clearfix::before, .clearfix::after {
     display: table;
     content: "";
@@ -43,11 +46,11 @@ h3.intro {
     font-weight: 100;
 }
 section {
-    padding: 65px 115px;
+    
     background-color:  #ffffff
 }
 #sessions-intro {
-    width: 1650px;
+    width: 100%;
     margin: 0 auto;
 }
 .fr {
@@ -58,6 +61,11 @@ section {
 }
 .date-box {
     width: 1100px;
+}
+.sessions-box {
+    display: block;
+    padding: 65px 115px;
+    border-bottom: 1px solid #ccc;
 }
 #sessions-date {
     color: #333333;
@@ -71,11 +79,90 @@ section {
     font-size: 36px;
     line-height: 60px;
     color: #999;
-    clear: both;
-    border-bottom: 1px solid #ccc;
+    
 }
 .sessions-price {
     color: #000;
+    font-size: 36px;
     font-weight: bold;
     margin-top: 50px;
+}
+.session-title {
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 75px;
+}
+.session-one {
+    margin-top: 75px;
+}
+.chapter-name, .chapter-intro {
+    display: block;
+    padding-left: 65px;
+    margin-left: 4px;
+    
+}
+.chapter-name {
+    color: #333;
+    font-size: 36px;
+    margin-top: -30px;
+}
+.chapter-intro {
+    color: #999;
+    font-size: 30px;
+    padding-bottom: 65px;
+}
+.sessions-item {
+    position: relative;
+}
+.sessions-item-first {
+    height: 50%;
+    top: 50%;
+}
+.sessions-item::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    width: 1px;
+    border-right: 1px solid #ccc;
+    left: 3px;
+    z-index: 0;
+    margin-top: 0;
+    height: 85%;
+}
+.sessions-item::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 1px;
+    background-color: #000;
+    top: 25px;
+    margin-top: -2px;
+}
+.sessions-item-last::before {
+    height: 0px;
+}
+.sessions-block {
+    width: 40%
+}
+.sessions-placeholder::after {
+    content: "";
+    margin-bottom: 155px;
+    display: block;
+}
+.rest {
+    color: #6f8bd7;
+    padding-bottom: 84px;
+}
+.rest-intro {
+    margin-left: 0;
+    padding-left: 0;
+    display: inline-block;
+    color: #b2b2b2
+}
+.rest-point::after {
+    background-color: #6f8bd7;
 }

@@ -166,3 +166,23 @@ section {
 .rest-point::after {
     background-color: #6f8bd7;
 }
+footer {
+    padding: 55px 115px;
+}
+.footer-left, .footer-right {
+    width: 50%;
+}
+h1.company-name {
+    color: #333;
+    font-size: 36px;
+}
+span.company-address {
+    color: #999;
+    font-size: 32px;
+    margin-top: 22px;
+    font-weight: 300;
+}
+.content-way {
+    margin-top: 38px;
+    text-align: right;
+}

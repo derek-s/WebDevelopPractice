@@ -1,0 +1,71 @@
+html, body, header, section, footer, h1, h2, h3, h4, h5, h6, a, b, i, em, span, div, p, del, ul, li, img {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft Yahei', 'Courier New', Courier, monospace;
+}
+ul, li {
+    list-style: none;
+}
+body {
+    background-color: #fff;
+}
+nav {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+a {
+    text-decoration: none;
+}
+.clearfix::after, .clearfix::before {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.logo {
+    width: 213px;
+    height: 48px;
+}
+.nav-menu {
+    float: right;
+}
+.nav-menu li {
+    height: 48px;
+    line-height: 48px;
+    float: left;
+}
+.login-link, .join-button, .nav-menu a {
+    font-size: 14px;
+    color: #8b93a6;
+    margin-right: 28px;
+}
+.nav-menu a:hover {
+    color: blue;
+}
+a.join-button {
+    margin-right: 0px;
+    margin-top: 5px;
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: block;
+}
+.join-button:hover {
+    font-weight: bold;
+    color: #000;
+}

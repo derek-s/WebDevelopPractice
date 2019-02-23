@@ -3,6 +3,9 @@ html, body, header, section, footer, h1, h2, h3, h4, h5, h6, a, b, i, em, span, 
     padding: 0;
     font-family: 'Microsoft Yahei', 'Courier New', Courier, monospace;
 }
+/* @font-face {
+    font-family: ""
+} */
 ul, li {
     list-style: none;
 }
@@ -68,4 +71,47 @@ a.join-button {
 a.join-button:hover {
     font-weight: bold;
     color: #000;
+}
+.banner {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.prev i{
+    font-size: 48px;
+    color: #fefeff;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+.next i{
+    font-size: 48px;
+    color: #fefeff;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(0, -50%);
+}
+.bannerSilder {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.bannerSilder li{
+    width: 12px;
+    height: 12px;
+    display: block;
+    float: left;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 10px;
+}
+.bannerSilder li.select {
+    background: #fff;
+}
+.bannerSilder li:last-child {
+    margin-right: 0;
 }

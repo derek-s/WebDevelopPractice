@@ -10,12 +10,19 @@ ul, li {
     list-style: none;
 }
 body {
-    background-color: #fff;
+    mix-width: 1180px;
+    background-color: #edf1fc;
+}
+header {
+    width: 100%;
+    min-width: 1180px;
+    background: #fff;
 }
 nav {
     width: 1180px;
     margin: 0 auto;
     padding: 16px 0;
+    background: #fff;
 }
 a {
     text-decoration: none;
@@ -75,8 +82,15 @@ a.join-button:hover {
 .banner {
     display: block;
     width: 100%;
+    height: auto;
     text-align: center;
     position: relative;
+    padding-bottom: 29%;
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .prev i{
     font-size: 48px;
@@ -114,4 +128,38 @@ a.join-button:hover {
 }
 .bannerSilder li:last-child {
     margin-right: 0;
+}
+.locationBar {
+    height: 100px;
+    width: 840px;
+    margin: 0 auto;
+    position: relative;
+}
+.locationBar input {
+    margin-top: 28px;
+    padding: 13px 15px 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 45px;
+    width: 296px;   
+    font-size: 14px;
+}
+
+.locationIcon {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    padding: 2px;
+    color: #5d58f7;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 35%;
+}
+input.icon {
+    position: relative;
 }

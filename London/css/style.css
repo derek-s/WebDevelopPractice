@@ -29,6 +29,10 @@ nav {
 }
 a {
     text-decoration: none;
+    color: #8b93a6;
+}
+a:hover {
+    color: #5d58f7;
 }
 .clearfix::after, .clearfix::before {
     content: "";
@@ -60,11 +64,7 @@ a {
 }
 .login-link, .join-button, .nav-menu a {
     font-size: 14px;
-    color: #8b93a6;
     margin-right: 28px;
-}
-.nav-menu a:hover {
-    color: #5d58f7;
 }
 a.join-button {
     margin-right: 0px;
@@ -327,4 +327,28 @@ h3.fSideBarTitle {
 .footerBar {
     height: 50px;
     line-height: 50px
+
+}
+.copyright {
+    color: #8b93a6;
+    margin-right: 15px;
+}
+.copyright, .crLink {
+    float: left;
+    font-size: 12px;
+}
+.crLink a {
+    padding: 0 15px;
+    border-left: 1px solid #ccc;
+}
+.contentOnline {
+    float: right;
+    font-size: 24px;
+    line-height: 50px;
+}
+.contentOnline i {
+    margin-right: 40px;
+}
+.contentOnline i:last-child {
+    margin-right: 0;
 }

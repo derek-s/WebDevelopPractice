@@ -10,7 +10,6 @@ ul, li {
     list-style: none;
 }
 body {
-    mix-width: 1180px;
     background-color: #edf1fc;
 }
 header {
@@ -284,11 +283,20 @@ footer {
     background-color: #fff;
     width: 100%;
     border-top: 1px solid #ccc;
+    position: relative;
+}
+footer::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #ccc;
 }
 .footerSideBar {
     padding: 40px 12px 45px 12px;
     height: 300px;
-    border-bottom: 1px solid #ccc;
 }
 .footerSideBar a {
     color: #838992;
@@ -315,4 +323,8 @@ h3.fSideBarTitle {
     column-count: 2;
     column-rule: none;
     column-gap: 48px;
+}
+.footerBar {
+    height: 50px;
+    line-height: 50px
 }

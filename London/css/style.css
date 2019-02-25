@@ -65,7 +65,7 @@ a {
     margin-right: 28px;
 }
 .nav-menu a:hover {
-    color: blue;
+    color: #5d58f7;
 }
 a.join-button {
     margin-right: 0px;
@@ -279,4 +279,40 @@ h2.places {
 .placesImgSecond {
     top: 0;
     right: 0;
+}
+footer {
+    background-color: #fff;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+.footerSideBar {
+    padding: 40px 12px 45px 12px;
+    height: 300px;
+    border-bottom: 1px solid #ccc;
+}
+.footerSideBar a {
+    color: #838992;
+    line-height: 28px;
+    font-size: 16px;
+}
+.footerSideBar a:hover {
+    color: #5d58f7;
+}
+h3.fSideBarTitle {
+    color: #838992;
+    font-size: 16px;
+    margin-bottom: 38px;
+}
+.SideBarBlock {
+    float: left;
+    width: 30%
+}
+.SideBarBlock:last-child {
+    width: 40%
+}
+.twoColumn {
+    height: 168px;
+    column-count: 2;
+    column-rule: none;
+    column-gap: 48px;
 }

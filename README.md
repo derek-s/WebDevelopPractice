@@ -10,5 +10,6 @@ HTML练习项目PSD模板均来自 [https://psdrepo.com](PSD Repo)
 
 * AppZap
 * Agenda behance
+* Search Portal
 
 未来将把这些静态页面部署到VPS上，部署后会更新demo的地址。

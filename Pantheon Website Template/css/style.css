@@ -1,0 +1,58 @@
+html, body, header, nav, section, article, footer, div, h1, h2, h3, h4, h5, h6, a, b, i, em, span, ul, li, img {
+    font-family: "Microsoft Yahei",'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #f8f9fb;
+}
+nav {
+    background: #fff;
+    height: 126px;
+    width: 100%;
+}
+a {
+    color: #858a95;
+    text-decoration: none;
+}
+.clearfix::after, .clearfix::before {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+div.menu a {
+    font-size: 14px;
+}
+div.menu a:hover {
+    color: #666978;
+    font-weight: 600;
+}
+div.logo, div.menu a {
+    line-height: 126px;
+}
+.pageWide {
+    width: 1170px;
+    margin: 0 auto;
+}
+.logo {
+    font-size: 28px;
+    font-weight: 600;
+    float: left;
+}
+.menu {
+    float: right;
+}
+.menu li {
+    float: left;
+    list-style: none;
+    margin-right: 28px;
+    box-sizing: border-box;
+}
+.menu li:last-child {
+    margin-right: 0;
+}

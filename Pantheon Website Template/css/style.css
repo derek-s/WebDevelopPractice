@@ -27,10 +27,21 @@ a {
 }
 div.menu a {
     font-size: 14px;
+    position: relative;
 }
 div.menu a:hover {
     color: #666978;
     text-shadow: 0px 0px black;
+}
+div.menu a:hover::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #0c82bf;
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
 }
 div.logo, div.menu a {
     line-height: 126px;

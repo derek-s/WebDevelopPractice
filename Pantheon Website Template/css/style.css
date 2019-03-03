@@ -40,7 +40,7 @@ div.menu a:hover::before {
     background-color: #0c82bf;
     border-radius: 50%;
     position: absolute;
-    top: 100%;
+    top: 105%;
     left: 50%;
 }
 div.logo, div.menu a {
@@ -69,4 +69,29 @@ div.logo, div.menu a {
 }
 .logoLink {
     color: black;
+}
+.banner {
+    background-color: #fff;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.bannerTitle {
+    color: #2b2f3b;
+    font-size: 60px;
+    margin-bottom: 35px;
+}
+.bannerIntro {
+    width: 980px;
+    color: #858a95;
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 48px;
+}
+strong {
+    color: black;
+    font-weight: normal;
+}
+.readMore {
+    font-size: 14px;
+    font-weight: 600;
 }

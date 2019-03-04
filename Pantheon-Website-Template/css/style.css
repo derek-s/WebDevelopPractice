@@ -15,6 +15,9 @@ a {
     color: #858a95;
     text-decoration: none;
 }
+ul, li {
+    list-style: none;
+}
 .clearfix::after, .clearfix::before {
     content: "";
     display: table;
@@ -94,4 +97,33 @@ strong {
 .readMore {
     font-size: 14px;
     font-weight: 600;
+}
+.list {
+    margin-top: 110px;
+}
+.dolorBlock {
+    background-color: #fff;
+    padding: 70px 22px 90px 22px;
+    float: left;
+    width: 27%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.dolorBlock:nth-child(3n) {
+    margin-right: 0;
+}
+.icon {
+    width: 56px;
+    height: 56px;
+}
+.dolorBlock:nth-child(1) > .icon, .dolorBlock:nth-child(3n+1) > .icon {
+    background: url(../images/img.png) no-repeat -10px -12px;
+}
+
+.dolorBlock:nth-child(2) > .icon, .dolorBlock:nth-child(3n+2) > .icon {
+    background: url(../images/img.png) no-repeat -74px -12px;
+}
+
+.dolorBlock:nth-child(3) > .icon, .dolorBlock:nth-child(3n+3) > .icon {
+    background: url(../images/img.png) no-repeat -134px -12px;
 }

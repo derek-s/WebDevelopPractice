@@ -107,7 +107,8 @@ strong {
     float: left;
     width: 27%;
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 110px;
+    position: relative;
 }
 .dolorBlock:nth-child(3n) {
     margin-right: 0;
@@ -115,6 +116,7 @@ strong {
 .icon {
     width: 56px;
     height: 56px;
+    margin: 0 auto 35px auto;
 }
 .dolorBlock:nth-child(1) > .icon, .dolorBlock:nth-child(3n+1) > .icon {
     background: url(../images/img.png) no-repeat -10px -12px;
@@ -126,4 +128,39 @@ strong {
 
 .dolorBlock:nth-child(3) > .icon, .dolorBlock:nth-child(3n+3) > .icon {
     background: url(../images/img.png) no-repeat -134px -12px;
+}
+.liTitle {
+    color: #666978;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+}
+.listIntro {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    color: #858a95;
+}
+.more {
+    border-radius: 50%;
+    background-color: #858a95;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    bottom: -37px;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+.more:hover {
+    background-color: #0a95dd;
+    cursor: pointer;
+}
+.moreIcon {
+    width: 9px;
+    height: 20px;
+    background: url(../images/img.png) no-repeat -194px -12px;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
 }

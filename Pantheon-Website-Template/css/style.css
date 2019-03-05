@@ -164,3 +164,24 @@ strong {
     right: 50%;
     transform: translate(50%, 50%);
 }
+.project {
+    width: 1400px;
+    margin: 0 auto;
+}
+.projectList {
+    width: 350px;
+    height: 277px;
+    float: left;
+    position: relative;
+}
+.projectList img {
+    filter: grayscale(100%);
+    filter: gray;
+    position: relative;
+    width: 350px;
+    height: 277px;
+}
+.projectList img:hover {
+    filter: none;
+    position: relative;
+}

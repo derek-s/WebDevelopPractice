@@ -182,6 +182,33 @@ strong {
     height: 277px;
 }
 .projectList img:hover {
-    filter: none;
-    position: relative;
+    /* filter: none;
+    position: relative; */
+}
+.projectBox {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    z-index: 6
+}
+.projectTitle, .projectIntro, .projectShow {
+    color: #fff;
+    text-align: left;
+    z-index: 6
+}
+.projectTitle {
+    font-size: 24px;
+}
+.projectIntro, .projectShow {
+    font-size: 14px;
+}
+.projectHover {
+    width: 350px;
+    height: 277px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    pointer-events: none;
 }

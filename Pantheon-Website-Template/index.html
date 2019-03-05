@@ -104,39 +104,111 @@
         <div class="project clearfix">
             <ul>
                 <li class="projectList">
+                    <div class="projectHover"></div>
                     <img src="images/image1.jpg" alt="" srcset="">
+                    <div class="projectBox">
+                        <h3 class="projectTitle">Lorem Ipsum dolor</h3>
+                        <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span class="projectShow">SHOW PROJECT</span>
+                    </div>
+
                 </li>
                 <li class="projectList">
+                    <div class="projectHover"></div>
                     <img src="images/image2.jpg" alt="" srcset="">
-                    
+                    <div class="projectBox">
+                        <h3 class="projectTitle">Lorem Ipsum dolor</h3>
+                        <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span class="projectShow">SHOW PROJECT</span>
+                    </div>
+
                 </li>
                 <li class="projectList">
+                    <div class="projectHover"></div>
                     <img src="images/image3.jpg" alt="" srcset="">
-                    
+                    <div class="projectBox">
+                        <h3 class="projectTitle">Lorem Ipsum dolor</h3>
+                        <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span class="projectShow">SHOW PROJECT</span>
+                    </div>
+
                 </li>
                 <li class="projectList">
+                    <div class="projectHover"></div>
                     <img src="images/image4.jpg" alt="" srcset="">
-                    
+                    <div class="projectBox">
+                        <h3 class="projectTitle">Lorem Ipsum dolor</h3>
+                        <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span class="projectShow">SHOW PROJECT</span>
+                    </div>
+
                 </li>
                 <li class="projectList">
+                    <div class="projectHover"></div>
                     <img src="images/image5.jpg" alt="" srcset="">
-                    
+                    <div class="projectBox">
+                        <h3 class="projectTitle">Lorem Ipsum dolor</h3>
+                        <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span class="projectShow">SHOW PROJECT</span>
+                    </div>
+
                 </li>
                 <li class="projectList">
+                    <div class="projectHover"></div>
                     <img src="images/image6.jpg" alt="" srcset="">
-                    
+                    <div class="projectBox">
+                        <h3 class="projectTitle">Lorem Ipsum dolor</h3>
+                        <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span class="projectShow">SHOW PROJECT</span>
+                    </div>
+
                 </li>
                 <li class="projectList">
+                    <div class="projectHover"></div>
                     <img src="images/image7.jpg" alt="" srcset="">
-                    
+                    <div class="projectBox">
+                        <h3 class="projectTitle">Lorem Ipsum dolor</h3>
+                        <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span class="projectShow">SHOW PROJECT</span>
+                    </div>
+
                 </li>
                 <li class="projectList">
+                    <div class="projectHover"></div>
                     <img src="images/image8.jpg" alt="" srcset="">
-                    
+                    <div class="projectBox">
+                        <h3 class="projectTitle">Lorem Ipsum dolor</h3>
+                        <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <span class="projectShow">SHOW PROJECT</span>
+                    </div>
+
                 </li>
             </ul>
         </div>
     </section>
 </body>
+<script>
+    var projectList = document.getElementsByClassName("projectList");
+    for (i = 0; i < projectList.length; i++) {
+        projectList[i].addEventListener("mouseenter", function () {
+            this.getElementsByClassName("projectHover")[0].style = "background: rgba(0, 0, 0, 0.2);";
+            this.getElementsByTagName("img")[0].style = "filter:none;";
+
+        });
+        projectList[i].addEventListener("mouseleave", function () {
+            this.getElementsByClassName("projectHover")[0].style = "background: rgba(0, 0, 0, 0.4);";
+            this.getElementsByTagName("img")[0].style = "filter: grayscale(100%);filter: gray;";
+        });
+
+    }
+</script>
 
 </html>

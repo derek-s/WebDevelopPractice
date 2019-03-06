@@ -210,5 +210,13 @@ strong {
     top: 0;
     left: 0;
     z-index: 5;
-    pointer-events: none;
+}
+.projectMore {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: relative;
+    margin: 0 auto;
+    display: none;
 }

@@ -111,6 +111,9 @@
                         <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span class="projectShow">SHOW PROJECT</span>
+                        <div class="projectMore">
+                            <a href="#" class="moreIcon"></a>
+                        </div>
                     </div>
 
                 </li>
@@ -122,6 +125,9 @@
                         <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span class="projectShow">SHOW PROJECT</span>
+                        <div class="projectMore">
+                            <a href="#" class="moreIcon"></a>
+                        </div>
                     </div>
 
                 </li>
@@ -133,6 +139,9 @@
                         <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span class="projectShow">SHOW PROJECT</span>
+                        <div class="projectMore">
+                            <a href="#" class="moreIcon"></a>
+                        </div>
                     </div>
 
                 </li>
@@ -144,6 +153,9 @@
                         <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span class="projectShow">SHOW PROJECT</span>
+                        <div class="projectMore">
+                            <a href="#" class="moreIcon"></a>
+                        </div>
                     </div>
 
                 </li>
@@ -155,6 +167,9 @@
                         <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span class="projectShow">SHOW PROJECT</span>
+                        <div class="projectMore">
+                            <a href="#" class="moreIcon"></a>
+                        </div>
                     </div>
 
                 </li>
@@ -166,6 +181,9 @@
                         <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span class="projectShow">SHOW PROJECT</span>
+                        <div class="projectMore">
+                            <a href="#" class="moreIcon"></a>
+                        </div>
                     </div>
 
                 </li>
@@ -177,6 +195,9 @@
                         <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span class="projectShow">SHOW PROJECT</span>
+                        <div class="projectMore">
+                            <a href="#" class="moreIcon"></a>
+                        </div>
                     </div>
 
                 </li>
@@ -188,6 +209,9 @@
                         <p class="projectIntro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <span class="projectShow">SHOW PROJECT</span>
+                        <div class="projectMore">
+                            <a href="#" class="moreIcon"></a>
+                        </div>
                     </div>
 
                 </li>
@@ -201,11 +225,23 @@
         projectList[i].addEventListener("mouseenter", function () {
             this.getElementsByClassName("projectHover")[0].style = "background: rgba(0, 0, 0, 0.2);";
             this.getElementsByTagName("img")[0].style = "filter:none;";
+            this.getElementsByClassName("projectShow")[0].style = "display:none;";
+            this.getElementsByClassName("projectBox")[0].style = "top:72px;";
+            this.getElementsByClassName("projectTitle")[0].style = "text-align:center;";
+            this.getElementsByClassName("projectIntro")[0].style = "text-align:center;";
+            this.getElementsByClassName("projectMore")[0].style = "display:block;";
+            this.getElementsByClassName("projectShow")[0].style = "display:none;";
 
         });
         projectList[i].addEventListener("mouseleave", function () {
             this.getElementsByClassName("projectHover")[0].style = "background: rgba(0, 0, 0, 0.4);";
             this.getElementsByTagName("img")[0].style = "filter: grayscale(100%);filter: gray;";
+            this.getElementsByClassName("projectShow")[0].style = "display:block;";
+            this.getElementsByClassName("projectBox")[0].style = "bottom:30px;";
+            this.getElementsByClassName("projectTitle")[0].style = "text-align:left;";
+            this.getElementsByClassName("projectIntro")[0].style = "text-align:left;";
+            this.getElementsByClassName("projectMore")[0].style = "display:none;";
+            this.getElementsByClassName("projectShow")[0].style = "display:block;";
         });
 
     }

@@ -217,11 +217,14 @@
                 </li>
             </ul>
         </div>
+        <div class="staff">
+            
+        </div>
     </section>
 </body>
 <script>
     var projectList = document.getElementsByClassName("projectList");
-    for (i = 0; i < projectList.length; i++) {
+    for (var i = 0; i < projectList.length; i++) {
         projectList[i].addEventListener("mouseenter", function () {
             this.getElementsByClassName("projectHover")[0].style = "background: rgba(0, 0, 0, 0.2);";
             this.getElementsByTagName("img")[0].style = "filter:none;";

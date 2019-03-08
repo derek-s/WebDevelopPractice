@@ -220,3 +220,13 @@ strong {
     margin: 0 auto;
     display: none;
 }
+.staff {
+    position: relative;
+}
+.staffNext, .staffPrev {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: #858a95;
+    position: absolute
+}

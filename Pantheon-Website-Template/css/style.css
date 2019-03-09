@@ -223,10 +223,35 @@ strong {
 .staff {
     position: relative;
 }
-.staffNext, .staffPrev {
+#staffNext, #staffPrev {
     height: 48px;
     width: 48px;
     border-radius: 50%;
+    display: block;
     background: #858a95;
     position: absolute
+}
+#staffPrev {
+    right: 0;
+
+}
+.sNext, .sPrev {
+    width: 9px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+}
+.sPrev {
+    background: url(../images/img.png) no-repeat -194px -12px;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+.sNext {
+    background: url(../images/img.png) no-repeat -235px -12px;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
 }

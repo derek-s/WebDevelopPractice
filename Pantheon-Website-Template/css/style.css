@@ -221,6 +221,7 @@ strong {
     display: none;
 }
 .staff {
+    margin-top: 200px;
     position: relative;
 }
 #staffNext, #staffPrev {
@@ -229,10 +230,14 @@ strong {
     border-radius: 50%;
     display: block;
     background: #858a95;
-    position: absolute
+    position: absolute;
+    top: 50%;
+}
+#staffNext {
+    left: -24px;
 }
 #staffPrev {
-    right: 0;
+    right: -24px;
 
 }
 .sNext, .sPrev {
@@ -247,6 +252,7 @@ strong {
     bottom: 50%;
     right: 50%;
     transform: translate(50%, 50%);
+    
 }
 .sNext {
     background: url(../images/img.png) no-repeat -235px -12px;
@@ -254,4 +260,22 @@ strong {
     bottom: 50%;
     right: 50%;
     transform: translate(50%, 50%);
+}
+.staffLBox {
+    width: 373px;
+    height: 336px;
+    margin-right: 25px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+}
+.staffLBox:nth-child(3n) {
+    margin-right: 0;
+}
+.staffBox {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    z-index: 1;
 }

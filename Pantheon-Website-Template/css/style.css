@@ -262,12 +262,13 @@ strong {
     transform: translate(50%, 50%);
 }
 .staffLBox {
-    width: 373px;
+    width: 337px;
     height: 336px;
     margin-right: 25px;
     background-color: #fff;
     float: left;
     position: relative;
+    padding: 18px;
 }
 .staffLBox:nth-child(3n) {
     margin-right: 0;
@@ -285,6 +286,23 @@ strong {
     width: 20px;
     display: block;
     margin-top: 18px;
-    margin-right: 18px;
     float: right;
+}
+.staffName {
+    margin-top: 108px;
+    font-size: 30px;
+    color: #666978;
+}
+.staffTittle {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #858a95;
+}
+.staffInfo {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #858a95;
+}
+.staffName, .staffTittle, .staffInfo {
+    text-align: center;
 }

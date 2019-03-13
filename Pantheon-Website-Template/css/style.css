@@ -221,8 +221,17 @@ strong {
     display: none;
 }
 .staff {
-    margin-top: 200px;
+    /* width: 1222px;
+    height: 428px; */
+    overflow: hidden;
+    padding-top: 200px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 110px;
     position: relative;
+}
+.staffUBox {
+    width: 1000%;
 }
 #staffNext, #staffPrev {
     height: 48px;
@@ -231,13 +240,13 @@ strong {
     display: block;
     background: #858a95;
     position: absolute;
-    top: 50%;
+    top: 60%;
 }
 #staffNext {
-    left: -24px;
+    left: 0px;
 }
 #staffPrev {
-    right: -24px;
+    right: 0px;
 
 }
 .sNext, .sPrev {
@@ -270,9 +279,9 @@ strong {
     position: relative;
     padding: 18px;
 }
-.staffLBox:nth-child(3n) {
+/* .staffLBox:nth-child(3n) {
     margin-right: 0;
-}
+} */
 .staffImg {
     position: absolute;
     top: -50%;
@@ -289,7 +298,7 @@ strong {
     float: right;
 }
 .staffName {
-    margin-top: 108px;
+    margin-top: 80px;
     font-size: 30px;
     color: #666978;
 }
@@ -305,4 +314,14 @@ strong {
 }
 .staffName, .staffTittle, .staffInfo {
     text-align: center;
+}
+.contact {
+    background-color: #fff;
+    width: 100%;
+}
+.contactTitle {
+    color: #2b2f3b;
+    font-size: 30px;
+    text-align: center;
+    padding: 68px 0px;
 }

@@ -337,8 +337,8 @@
                         ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </li>
             </ul>
-            <div id="staffNext"><i class="sNext"></i></div>
             <div id="staffPrev"><i class="sPrev"></i></div>
+            <div id="staffNext"><i class="sNext"></i></div>
         </div>
         <div class="contact">
             <div class="contactBox pageWide">
@@ -375,35 +375,30 @@
         });
 
     }
-    var staffWidth = 796;
+    var staffWidth = 1194;
     var staffLength = document.getElementById("staffList").getElementsByClassName("staffLBox").length;
-    var t1 = 1;
+    var t1 = 0;
     var t2 = staffLength / 3 - 1;
-    var t3 = 1;
-    document.getElementById("staffNext").onclick = function() {
-        if(t2 == -1){
-                t2 = staffLength / 3 - 1;
-            }
-        if(t1 == 1){
-            document.getElementById("staffList").style = "transition-duration: 0.6s;transform: translateX(-"+ t2 * staffWidth +"px)";
-            t2--;
-        }else {
-            document.getElementById("staffList").style = "transition-duration: 0.6s;transform: translateX(-"+ t2 * staffWidth +"px)";
+    document.getElementById("staffNext").onclick = function () {
+        if(t1 != t2){
+            t1++;
+        }else{
+            t1 = 0;
         }
-        console.log(t2);
+        document.getElementById("staffList").style = "transition-duration: 0.6s;transform: translateX(-" + t1 *
+            staffWidth + "px)";
     };
     document.getElementById("staffPrev").onclick = function() {
-        if(t3 == 3){
-                t3 = 0;
-            }
-        if(t1 == 1){
-            document.getElementById("staffList").style = "transition-duration: 0.6s;transform: translateX(-"+ t3 * staffWidth +"px)";
-            t3++;
-        }else {
-            document.getElementById("staffList").style = "transition-duration: 0.6s;transform: translateX(-"+ t3 * staffWidth +"px)";
+        if(t1 != 0){
+            t1--;
+        }else{
+            t1 = t2;
         }
-        console.log(t3);
+        document.getElementById("staffList").style = "transition-duration: 0.6s;transform: translateX(-" + t1 *
+            staffWidth + "px)";
+        
     };
+    
 </script>
 
 </html>

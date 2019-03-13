@@ -243,10 +243,10 @@ strong {
     top: 60%;
 }
 #staffNext {
-    left: 0px;
+    right: 0px;
 }
 #staffPrev {
-    right: 0px;
+    left: 0px;
 
 }
 .sNext, .sPrev {
@@ -255,7 +255,7 @@ strong {
     display: block;
     border-radius: 50%;
 }
-.sPrev {
+.sNext {
     background: url(../images/img.png) no-repeat -194px -12px;
     position: absolute;
     bottom: 50%;
@@ -263,7 +263,7 @@ strong {
     transform: translate(50%, 50%);
     
 }
-.sNext {
+.sPrev{
     background: url(../images/img.png) no-repeat -235px -12px;
     position: absolute;
     bottom: 50%;

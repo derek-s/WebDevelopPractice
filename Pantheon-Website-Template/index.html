@@ -377,26 +377,17 @@
     }
     var staffWidth = 1194;
     var staffLength = document.getElementById("staffList").getElementsByClassName("staffLBox").length;
+    var staffList = document.getElementById("staffList")
     var t1 = 0;
     var t2 = staffLength / 3 - 1;
+    var sNextEle = 
     document.getElementById("staffNext").onclick = function () {
-        if(t1 != t2){
-            t1++;
-        }else{
-            t1 = 0;
-        }
-        document.getElementById("staffList").style = "transition-duration: 0.6s;transform: translateX(-" + t1 *
-            staffWidth + "px)";
+        t1!=t2?t1++:t1=0;
+        staffList.style = "transition-duration: 0.6s;transform: translateX(-" + t1 *staffWidth + "px)";
     };
     document.getElementById("staffPrev").onclick = function() {
-        if(t1 != 0){
-            t1--;
-        }else{
-            t1 = t2;
-        }
-        document.getElementById("staffList").style = "transition-duration: 0.6s;transform: translateX(-" + t1 *
-            staffWidth + "px)";
-        
+        t1!=0?t1--:t1=t2;
+        staffList.style = "transition-duration: 0.6s;transform: translateX(-" + t1 *staffWidth + "px)";
     };
     
 </script>

@@ -335,6 +335,9 @@ strong {
 .left {
     float: left;
 }
+.right {
+    float: right;
+}
 .contactLabel {
     display: block;
     font-size: 14px;
@@ -386,4 +389,40 @@ strong {
 }
 .selectList span:hover {
     background-color: #fff;
+}
+#message {
+    border: none;
+    background-color: #f8f9fb;
+    padding: 20px 24px;
+    width: 690px;
+    height: 220px;
+    resize: none;
+}
+.contactSend {
+    width: 374px;
+    height: 58px;
+    text-align: center;
+    margin: 78px auto 54px auto;
+    position: relative;
+}
+.contactSend::before {
+    content: "";
+    width: 21px;
+    height: 17px;
+    background: url("../images/img.png") no-repeat -391px -12px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+}
+.contactSend input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #0a95dd;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
 }

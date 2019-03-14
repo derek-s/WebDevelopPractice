@@ -445,16 +445,18 @@
             var self = this;
         this.selectBox.onclick = function(){
             self.selectListShow();
-        }    
+        };
         return this;    
         },
         selectListShow: function () {
             this.selectDivList.style.display = "block";
+            //组织事件冒泡导致下拉框不隐藏
+            window.event.stopPropagation();
         },
         selectListHide: function () {
             this.selectDivList.style.display = "none";
-            event=event||window.event;
-            event.stopPropagation();
+            //组织事件冒泡导致下拉框被点击弹出
+            window.event.stopPropagation();
         },
         selectPick: function () {
             var span = this.selectSpan,
@@ -464,14 +466,14 @@
                     self.selectDivBin.innerHTML = this.innerHTML;
                     self.selectLpt.value = this.id;
                     self.selectListHide();
-                    // if (self.selectLpt.fireEvent) {
-                    //     self.selectLpt.fireEvent("onchange");
-                    // } else {
-                    //     var evt;
-                    //     evt = document.createEvent("HTMLEvents");
-                    //     evt.initEvent("change", true, true);
-                    //     self.selectLpt.dispatchEvent(evt);
-                    // }
+                    if (self.selectLpt.fireEvent) {
+                        self.selectLpt.fireEvent("onchange");
+                    } else {
+                        var evt;
+                        evt = document.createEvent("HTMLEvents");
+                        evt.initEvent("change", true, true);
+                        self.selectLpt.dispatchEvent(evt);
+                    }
                 }
             }
             return this;
@@ -485,9 +487,9 @@
 
 
     //点击页面其他位置隐藏div模拟的topic select
-    // document.onclick = function() {
-    //     document.getElementsByClassName("selectList")[0].style="display: none;";
-    // }
+    document.onclick = function() {
+        document.getElementsByClassName("selectList")[0].style="display: none;";
+    }
 
 </script>
 

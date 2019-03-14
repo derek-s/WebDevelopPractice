@@ -18,6 +18,13 @@ a {
 ul, li {
     list-style: none;
 }
+select {
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 .clearfix::after, .clearfix::before {
     content: "";
     display: table;
@@ -324,4 +331,59 @@ strong {
     font-size: 30px;
     text-align: center;
     padding: 68px 0px;
+}
+.left {
+    float: left;
+}
+.contactLabel {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#fullName, #email {
+    padding: 20px;
+    width: 360px;
+    border: none;
+    background-color: #f8f9fb;
+    margin-bottom: 20px;
+}
+.contactSelect option {
+    padding: 20px;
+}
+.selectIpt {
+    padding: 20px;
+    width: 360px;
+    height: 16px;
+    border: none;
+    background-color: #f8f9fb;
+    position: relative;
+}
+.selectIpt::after {
+    content: "";
+    width: 56px;
+    height: 56px;
+    background: url(../images/img.png) no-repeat -317px -12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+}
+.selectList {
+    border: 1px solid #f8f9fb;
+    background-color: #f8f9fb;
+    font-size: 14px;
+    width: 358px;
+    cursor: pointer;
+    position:absolute;
+    z-index:10000;
+}
+.selectList span {
+    width: 360px;
+    display: block;
+    cursor: pointer;
+    height: 16px;
+    padding: 20px;
+}
+.selectList span:hover {
+    background-color: #fff;
 }

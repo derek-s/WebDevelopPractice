@@ -430,6 +430,7 @@
                 </ul>
             </div>
         </div>
+        <div id="goTop"></div>
     </footer>
 </body>
 <script>
@@ -543,6 +544,9 @@
     //点击页面其他位置隐藏div模拟的topic select
     document.onclick = function () {
         document.getElementsByClassName("selectList")[0].style = "display: none;";
+    }
+    document.getElementById("goTop").onclick = function() {
+        scroll(0,0);
     }
 </script>
 

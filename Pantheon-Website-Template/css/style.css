@@ -430,6 +430,7 @@ strong {
     margin-top: 110px;
     padding: 45px 50px;
     background-color: #fff;
+    position: relative;
 }
 .fB-About {
     width: 240px;
@@ -469,4 +470,22 @@ strong {
 }
 .fB-ToolBar {
     width: 768px;
+}
+#goTop {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0a95dd;
+}
+#goTop::before {
+    content: "";
+    width: 15px;
+    height: 10px;
+    background: url("../images/img.png") no-repeat -421px -12px;
+    display: block;
+    margin: 50% auto;
+    transform: translate(0, -50%)
 }

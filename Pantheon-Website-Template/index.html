@@ -11,6 +11,7 @@
 
 <body>
     <header>
+        <!-- 导航栏 -->
         <nav class="clearfix">
             <div class="pageWide">
                 <div class="logo"><a href="#" class="logoLink">PANTHEON</a></div>
@@ -24,6 +25,7 @@
                 </div>
             </div>
         </nav>
+        <!-- banner -->
         <div class="banner">
             <div class="bannerBody pageWide">
                 <h1 class="bannerTitle">Lorem ipsum dolor sit amet</h1>
@@ -42,6 +44,7 @@
             </div>
         </div>
     </header>
+    <!-- 主体 -->
     <section>
         <div class="list pageWide clearfix">
             <ul>
@@ -101,6 +104,7 @@
                 </li>
             </ul>
         </div>
+        <!-- 项目列表 JS特效实现 -->
         <div class="project clearfix">
             <ul>
                 <li class="projectList">
@@ -217,6 +221,7 @@
                 </li>
             </ul>
         </div>
+        <!-- staff轮播 -->
         <div class="staff pageWide clearfix">
             <ul id="staffList" class="staffUBox clearfix">
                 <li class="staffLBox">
@@ -345,11 +350,36 @@
                 <h1 class="contactTitle">CONTACT</h1>
                 <div class="contactBox"></div>
             </div>
+            <div class="contactForm pageWide clearfix">
+                <form action="#">
+                    <div class="left">
+                        <label for="fullName" class="contactLabel">FULL NAME</label>
+                        <input type="text" id="fullName" name="fullName">
+                        <label for="email" class="contactLabel">EMAIL ADDRESS</label>
+                        <input type="text" id="email" , name="email">
+                        <label for="topic" class="contactLabel">TOPIC</label>
+                        <div id="topicSelect">
+                            <div class="selectIpt">LOREM IPSUM DOLOR</div>
+                            <div style="display: none;" class="selectList">
+                                <span id="l0">LOREM IPSUM DOLOR</span>
+                                <span id="l1">LOREM IPSUM DOLOR 1</span>
+                                <span id="l2">LOREM IPSUM DOLOR 2</span>
+                                <span id="l3">LOREM IPSUM DOLOR 3</span>
+                            </div>
+                            <input type="hidden" id="topicVal">
+                        </div>
+
+                    </div>
+
+
+                </form>
+            </div>
 
         </div>
     </section>
 </body>
 <script>
+    // 项目列表特效
     var projectList = document.getElementsByClassName("projectList");
     for (var i = 0; i < projectList.length; i++) {
         projectList[i].addEventListener("mouseenter", function () {
@@ -375,21 +405,90 @@
         });
 
     }
+    // staff轮播
     var staffWidth = 1194;
     var staffLength = document.getElementById("staffList").getElementsByClassName("staffLBox").length;
     var staffList = document.getElementById("staffList")
     var t1 = 0;
     var t2 = staffLength / 3 - 1;
-    var sNextEle = 
-    document.getElementById("staffNext").onclick = function () {
-        t1!=t2?t1++:t1=0;
-        staffList.style = "transition-duration: 0.6s;transform: translateX(-" + t1 *staffWidth + "px)";
+    var sNextEle =
+        document.getElementById("staffNext").onclick = function () {
+            t1 != t2 ? t1++ : t1 = 0;
+            staffList.style = "transition-duration: 0.6s;transform: translateX(-" + t1 * staffWidth + "px)";
+        };
+    document.getElementById("staffPrev").onclick = function () {
+        t1 != 0 ? t1-- : t1 = t2;
+        staffList.style = "transition-duration: 0.6s;transform: translateX(-" + t1 * staffWidth + "px)";
     };
-    document.getElementById("staffPrev").onclick = function() {
-        t1!=0?t1--:t1=t2;
-        staffList.style = "transition-duration: 0.6s;transform: translateX(-" + t1 *staffWidth + "px)";
+
+    // div+span模拟select+option
+    function SelectPullDown(divbox) {
+        this.selectBox = document.getElementById(divbox);
+        //选中的值
+        this.selectLpt = document.getElementById(divbox).getElementsByTagName("input")[0];
+        //选中显示框
+        this.selectDivBin = document.getElementById(divbox).getElementsByTagName("div")[0];
+        //下拉DIV
+        this.selectDivList = document.getElementById(divbox).getElementsByTagName("div")[1];
+        //选项
+        this.selectSpan = document.getElementById(divbox).getElementsByTagName("span")
+    }
+
+    // 定义原型
+    SelectPullDown.prototype = {
+        selectBox: "",
+        selectLpt: "",
+        selectDivBin: "",
+        selectDivList: "",
+        selectSpan: "",
+        LptEven: function () {
+            var self = this;
+        this.selectBox.onclick = function(){
+            self.selectListShow();
+        }    
+        return this;    
+        },
+        selectListShow: function () {
+            this.selectDivList.style.display = "block";
+        },
+        selectListHide: function () {
+            this.selectDivList.style.display = "none";
+            event=event||window.event;
+            event.stopPropagation();
+        },
+        selectPick: function () {
+            var span = this.selectSpan,
+            self = this;
+            for (var i = 0; i < span.length; i++) {
+                span[i].onclick = function () {
+                    self.selectDivBin.innerHTML = this.innerHTML;
+                    self.selectLpt.value = this.id;
+                    self.selectListHide();
+                    // if (self.selectLpt.fireEvent) {
+                    //     self.selectLpt.fireEvent("onchange");
+                    // } else {
+                    //     var evt;
+                    //     evt = document.createEvent("HTMLEvents");
+                    //     evt.initEvent("change", true, true);
+                    //     self.selectLpt.dispatchEvent(evt);
+                    // }
+                }
+            }
+            return this;
+        },
+        init: function() {
+            this.LptEven().selectPick();
+        }
     };
-    
+    var topic = new SelectPullDown("topicSelect");
+    topic.init();
+
+
+    //点击页面其他位置隐藏div模拟的topic select
+    // document.onclick = function() {
+    //     document.getElementsByClassName("selectList")[0].style="display: none;";
+    // }
+
 </script>
 
 </html>

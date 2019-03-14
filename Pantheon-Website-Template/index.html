@@ -352,26 +352,34 @@
             </div>
             <div class="contactForm pageWide clearfix">
                 <form action="#">
-                    <div class="left">
-                        <label for="fullName" class="contactLabel">FULL NAME</label>
-                        <input type="text" id="fullName" name="fullName">
-                        <label for="email" class="contactLabel">EMAIL ADDRESS</label>
-                        <input type="text" id="email" , name="email">
-                        <label for="topic" class="contactLabel">TOPIC</label>
-                        <div id="topicSelect">
-                            <div class="selectIpt">LOREM IPSUM DOLOR</div>
-                            <div style="display: none;" class="selectList">
-                                <span id="l0">LOREM IPSUM DOLOR</span>
-                                <span id="l1">LOREM IPSUM DOLOR 1</span>
-                                <span id="l2">LOREM IPSUM DOLOR 2</span>
-                                <span id="l3">LOREM IPSUM DOLOR 3</span>
+                    <div class="clearfix">
+                        <div class="left contactLeft">
+                            <label for="fullName" class="contactLabel">FULL NAME</label>
+                            <input type="text" id="fullName" name="fullName">
+                            <label for="email" class="contactLabel">EMAIL ADDRESS</label>
+                            <input type="text" id="email" , name="email">
+                            <label for="topic" class="contactLabel">TOPIC</label>
+                            <div id="topicSelect">
+                                <div class="selectIpt">LOREM IPSUM DOLOR</div>
+                                <div style="display: none;" class="selectList">
+                                    <span id="l0">LOREM IPSUM DOLOR</span>
+                                    <span id="l1">LOREM IPSUM DOLOR 1</span>
+                                    <span id="l2">LOREM IPSUM DOLOR 2</span>
+                                    <span id="l3">LOREM IPSUM DOLOR 3</span>
+                                </div>
+                                <input name="topic" type="hidden" id="topicVal">
                             </div>
-                            <input type="hidden" id="topicVal">
                         </div>
 
+                        <div class="right">
+                            <label for="contactArea" class="contactLabel">MESSAGE</label>
+                            <textarea name="contactArea" id="message"></textarea>
+                        </div>
                     </div>
 
-
+                    <div class="contactSend">
+                        <input type="submit" value="SEND MESSAGE">
+                    </div>
                 </form>
             </div>
 
@@ -443,10 +451,10 @@
         selectSpan: "",
         LptEven: function () {
             var self = this;
-        this.selectBox.onclick = function(){
-            self.selectListShow();
-        };
-        return this;    
+            this.selectBox.onclick = function () {
+                self.selectListShow();
+            };
+            return this;
         },
         selectListShow: function () {
             this.selectDivList.style.display = "block";
@@ -460,7 +468,7 @@
         },
         selectPick: function () {
             var span = this.selectSpan,
-            self = this;
+                self = this;
             for (var i = 0; i < span.length; i++) {
                 span[i].onclick = function () {
                     self.selectDivBin.innerHTML = this.innerHTML;
@@ -478,7 +486,7 @@
             }
             return this;
         },
-        init: function() {
+        init: function () {
             this.LptEven().selectPick();
         }
     };
@@ -487,10 +495,9 @@
 
 
     //点击页面其他位置隐藏div模拟的topic select
-    document.onclick = function() {
-        document.getElementsByClassName("selectList")[0].style="display: none;";
+    document.onclick = function () {
+        document.getElementsByClassName("selectList")[0].style = "display: none;";
     }
-
 </script>
 
 </html>

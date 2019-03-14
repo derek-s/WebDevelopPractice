@@ -489,3 +489,18 @@ strong {
     margin: 50% auto;
     transform: translate(0, -50%)
 }
+.powerby {
+    width: 100%;
+}
+.cb {
+    width: 100%;
+    height: 110px;
+    font-size: 12px;
+    color: #858a95;
+    line-height: 110px;
+    display: inline-block;
+    text-align: center;
+}
+.name{
+    color: #2b2f3b;
+}

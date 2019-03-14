@@ -426,3 +426,47 @@ strong {
     outline: none;
     cursor: pointer;
 }
+.footerBar {
+    margin-top: 110px;
+    padding: 45px 50px;
+    background-color: #fff;
+}
+.fB-About {
+    width: 240px;
+}
+.fB-Title {
+    font-size: 24px;
+    margin-bottom: 38px;
+    color: #2b2f3b;
+}
+.fB-Intro {
+    font-size: 12px;
+    color: #858a95;
+    text-align: justify;
+    margin-bottom: 38px;
+}
+.fB-Copyright {
+    font-size: 12px;
+    color: #2b2f3b;
+    font-weight: 400;
+}
+.tB-Title {
+    font-size: 14px;
+    color: #2b2f3b;
+    margin-bottom: 32px;
+}
+.toolBar {
+    float: left;
+    width: 25%;
+}
+.toolBar li {
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: #858a95;
+}
+.toolBar li a:hover {
+    color: #000;
+}
+.fB-ToolBar {
+    width: 768px;
+}

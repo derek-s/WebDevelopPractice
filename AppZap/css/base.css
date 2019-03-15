@@ -812,6 +812,9 @@ a.plan-button:hover {
     border-radius: 5px;
     box-shadow: 25px 40px 50px 1px rgba(0, 0, 0, .1);
 }
+.blog-post-list {
+    margin-top: 100px;
+}
 @media only screen and (max-width: 1920px) {
 
     .blog-post-list {
@@ -1017,4 +1020,7 @@ a.a-select {
 }
 a.a-select:hover {
     border: none;
+}
+.plan-box {
+    margin-top: 50px;
 }

@@ -799,7 +799,7 @@ a.plan-button:hover {
 }
 .blog-post-list ul {
     display: block;
-    width: 100%;
+    width: 1000%;
     position: absolute;
 }
 .blog-post-list li {

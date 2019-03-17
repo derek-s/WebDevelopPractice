@@ -823,7 +823,7 @@ a.plan-button:hover {
         /* min-width: 1176px; */
         height: 550px;
         overflow: hidden;
-        position: relative;
+        /* position: relative; */
         margin-bottom: 45px;
     }
 }

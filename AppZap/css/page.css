@@ -55,7 +55,7 @@ header {
 
 .img-block-bar ul {
     position: absolute;
-    width: 3000px;
+    width: 1000%;
     left: -100px;
 }
 

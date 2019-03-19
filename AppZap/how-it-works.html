@@ -109,43 +109,43 @@
                 <ul>
                     <li>
                         <div class="question">There are many variations of passages of Lorem Ipsum available, but the majority have suffered?</div>
-                        <div class="answer hide"></div>
+                        <div class="answer hide">Maecenas dui tellus, bibendum a aliquet in, malesuada nec sapien. Ut placerat ex sed eros egestas pharetra. Mauris ac condim entum felis. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly belie.</div>
                         <div class="unwind"> <i class="fas fa-angle-down"></i> </div>
                     </li>
                     <li>
                         <div class="question">There are many variations of passages of Lorem Ipsum available, but the majority have suffered?</div>
-                        <div class="answer hide"></div>
+                        <div class="answer hide">Maecenas dui tellus, bibendum a aliquet in, malesuada nec sapien. Ut placerat ex sed eros egestas pharetra. Mauris ac condim entum felis. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly belie.</div>
                         <div class="unwind"><i class="fas fa-angle-down"></i></div>
                     </li>
                     <li>
                         <div class="question">There are many variations of passages of Lorem Ipsum available, but the majority have suffered?
                         </div>
-                        <div class="answer">Maecenas dui tellus, bibendum a aliquet in, malesuada nec sapien. Ut placerat ex sed eros egestas pharetra. Mauris ac condim entum felis. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly belie.</div>
+                        <div class="answer hide">Maecenas dui tellus, bibendum a aliquet in, malesuada nec sapien. Ut placerat ex sed eros egestas pharetra. Mauris ac condim entum felis. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly belie.</div>
                         <div class="unwind"><i class="fas fa-angle-up"></i></div>
                     </li>
                     <li>
                         <div class="question">There are many variations of passages of Lorem Ipsum available, but the majority have suffered?</div>
-                        <div class="answer hide"></div>
+                        <div class="answer hide">Maecenas dui tellus, bibendum a aliquet in, malesuada nec sapien. Ut placerat ex sed eros egestas pharetra. Mauris ac condim entum felis. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly belie.</div>
                         <div class="unwind"><i class="fas fa-angle-down"></i></div>
                     </li>
                     <li>
                         <div class="question">There are many variations of passages of Lorem Ipsum available, but the majority have suffered?</div>
-                        <div class="answer hide"></div>
+                        <div class="answer hide">Maecenas dui tellus, bibendum a aliquet in, malesuada nec sapien. Ut placerat ex sed eros egestas pharetra. Mauris ac condim entum felis. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly belie.</div>
                         <div class="unwind"><i class="fas fa-angle-down"></i></div>
                     </li>
                     <li>
                         <div class="question">There are many variations of passages of Lorem Ipsum available, but the majority have suffered?</div>
-                        <div class="answer hide"></div>
+                        <div class="answer hide">Maecenas dui tellus, bibendum a aliquet in, malesuada nec sapien. Ut placerat ex sed eros egestas pharetra. Mauris ac condim entum felis. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly belie.</div>
                         <div class="unwind"><i class="fas fa-angle-down"></i></div>
                     </li>
                     <li>
                         <div class="question">There are many variations of passages of Lorem Ipsum available, but the majority have suffered?</div>
-                        <div class="answer hide"></div>
+                        <div class="answer hide">Maecenas dui tellus, bibendum a aliquet in, malesuada nec sapien. Ut placerat ex sed eros egestas pharetra. Mauris ac condim entum felis. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly belie.</div>
                         <div class="unwind"><i class="fas fa-angle-down"></i></div>
                     </li>
                     <li>
                         <div class="question">There are many variations of passages of Lorem Ipsum available, but the majority have suffered?</div>
-                        <div class="answer hide"></div>
+                        <div class="answer hide">Maecenas dui tellus, bibendum a aliquet in, malesuada nec sapien. Ut placerat ex sed eros egestas pharetra. Mauris ac condim entum felis. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly belie.</div>
                         <div class="unwind"><i class="fas fa-angle-down"></i></div>
                     </li>
                 </ul>
@@ -237,5 +237,19 @@
     </footer>
 
 </body>
+<script>
+    var unwinds = document.getElementsByClassName("unwind");
+    for(var i = 0; i < unwinds.length; i++){
+        unwinds[i].onclick = function () {
+            if(this.previousElementSibling.className == "answer hide"){
+                this.previousElementSibling.className = "answer";
+                this.children[0].className = "fas fa-angle-up";
+            }else if(this.previousElementSibling.className == "answer"){
+                this.previousElementSibling.className = "answer hide";
+                this.children[0].className = "fas fa-angle-down";
+            };
+        }
+    }
 
+</script>
 </html>

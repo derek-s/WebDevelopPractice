@@ -370,8 +370,8 @@
                 </div>
                 
                 <div class="pravbutton clearfix">
-                    <div class="prev"> <i class="fas fa-chevron-left"></i> </div>
-                    <div class="next"> <i class="fas fa-chevron-right"></i> </div>
+                    <div id="blog-prev" class="prev"> <i class="fas fa-chevron-left"></i> </div>
+                    <div id="blog-next" class="next"> <i class="fas fa-chevron-right"></i> </div>
                 </div>
             </div>
         </div>
@@ -439,6 +439,39 @@
 
 </body>
 <script>
-    
+    var blogLeft = 0;
+    var blogPrev = document.getElementById("blog-prev");
+    var blogNext = document.getElementById("blog-next");
+    var blogUl = document.getElementsByClassName("blog-post-list-box")[0].getElementsByTagName("ul")[0];
+    var blogLiWidth = blogUl.getElementsByTagName("li")[0].offsetWidth;
+
+    function elementGoTarget( element, target ){
+        clearInterval(element.timeId);
+        element.timeId = setInterval(function () {
+            var current = element.offsetLeft;
+            var step = 10;
+            step = current < target ? step : -step;
+            current += step;
+            if(Math.abs(current - target) > Math.abs(step)) {
+                element.style.left = current + "px";
+            }else{
+                element.style.left = target + "px";
+            }
+        }, 20);
+    }
+
+    var index = 0;
+    blogPrev.onclick = function () {
+        if(index < blogUl.children.length - 1){
+            index++;
+            elementGoTarget(blogUl, -index*blogLiWidth);
+        }
+    }
+    blogNext.onclick = function () {
+        if(index > 0){
+            index--;
+            elementGoTarget(blogUl, -index*blogLiWidth);
+        }
+    }
 </script>
 </html>

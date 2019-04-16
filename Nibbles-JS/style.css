@@ -1,0 +1,12 @@
+html, body, div {
+    margin: 0;
+    padding: 0;
+}
+#map {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    background: #ccc;
+    transform: translate(0, 25%);
+}
